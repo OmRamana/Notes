@@ -1,0 +1,7 @@
+pip install python-dotenv djangorestframework djangorestframework-simplejwt twilio bs4 hashid botocore python-decouple boto3 django-cors-headers django-phonenumber-field[phonenumbers] psycopg2 django-filter django-timezone-field hashids Pillow
+Install Postgres
+https://dev.to/mungaigikure/how-to-set-up-postgres-in-your-django-project-575i
+Run Migrations
+Python manage.py migrate
+Run the server
+Python manage.py runserver
