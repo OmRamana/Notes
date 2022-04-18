@@ -95,3 +95,16 @@ ModuleNotFoundError: No module named 'account'
 'eda@gmail.com'
 >>>
 
+Query a single object
+(venv) C:\Users\keanu\django\TelePsycRX_Staging_Backend>python manage.py shell
+Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from accounts.models import Appointment
+>>> Appointment.object.get(pk=14)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Appointment' has no attribute 'object'
+>>> Appointment.objects.get(pk=14)
+<Appointment: bunasi rod PA - Psychiatry. eda ram (2022-04-18 20:02:00+00:00)>
+>>>
