@@ -77,3 +77,21 @@ om
 brad
 tom
 >>>
+
+Query a foreign key on the database
+(venv) C:\Users\keanu\django\TelePsycRX_Staging_Backend>python manage.py shell
+Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from account.models import Appointment
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ModuleNotFoundError: No module named 'account'
+>>> from accounts.models import Appointment
+>>> queryset = Appointment.objects.all()
+>>> queryset[0].patient
+<Patient: eda bar>
+>>> queryset[0].patient.email
+'eda@gmail.com'
+>>>
+
