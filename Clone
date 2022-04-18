@@ -108,3 +108,19 @@ AttributeError: type object 'Appointment' has no attribute 'object'
 >>> Appointment.objects.get(pk=14)
 <Appointment: bunasi rod PA - Psychiatry. eda ram (2022-04-18 20:02:00+00:00)>
 >>>
+
+Update a field
+
+>>> Appointment.objects.get(pk=14)
+<Appointment: bunasi rod PA - Psychiatry. eda ram (2022-04-18 20:02:00+00:00)>
+>>> a = Appointment.objects.get(pk=14)
+>>> a.is_confirmed = True
+>>> a.save()
+>>> a.is_confirmed
+True
+
+obj, created = Person.objects.update_or_create(
+    first_name='John', last_name='Lennon',
+    defaults={'first_name': 'Bob'},
+)
+
