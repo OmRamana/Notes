@@ -1,12 +1,9 @@
-# Notes
-Making queries to django models
+**Making an update to django model based on the request params**
 
 Create action in the django rest framework viewset
-
 from django.dispatch import receiver
 from django.db.models.signals import post_save
 from django.core.mail import EmailMultiAlternatives
-
 from django.http import JsonResponse
 from django.forms.models import model_to_dict
 
@@ -19,9 +16,7 @@ from django.forms.models import model_to_dict
         appointment.save()
         return JsonResponse(model_to_dict(appointment))
 
-
-
-Send email on Model creation django
+**Send email on Model creation django**
      
      @receiver(post_save, sender=Appointment)
      def send_appointment_request_mail(sender, instance, created, **kwargs):
@@ -35,4 +30,11 @@ Send email on Model creation django
        msg.attach_alternative(html_content, "text/html")
        msg.send()
 
-  
+** Send an email after model update django **
+
+@receiver(post_save, sender=Appointment)
+def send_appointment_reschedule_email(sender, instance, raw, created, **kwargs):
+    if created or raw:
+        return
+    #stuff after model creation    
+    subject, from_email, to , pk = 'Appointment Reschedule', 'TelePsycRX@telepsycrx.com', instance.doctor.email, instance.id
