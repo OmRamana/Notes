@@ -1,4 +1,4 @@
-**Making an update to django model based on the request params**
+**Email sending and model updates django rest framework**
 
 ```from django.dispatch import receiver
 from django.db.models.signals import post_save
