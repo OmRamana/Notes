@@ -33,8 +33,8 @@ from django.forms.models import model_to_dict
 ** Send an email after model update django **
 
 ```@receiver(post_save, sender=Appointment)
-def send_appointment_reschedule_email(sender, instance, raw, created, **kwargs):
-    if created or raw:
-        return
-    #stuff after model creation    
-    subject, from_email, to , pk = 'Appointment Reschedule', 'TelePsycRX@telepsycrx.com', instance.doctor.email, instance.id```
+   def send_appointment_reschedule_email(sender, instance, raw, created, **kwargs):
+       if created or raw:
+           return
+       #stuff after model creation    
+       subject, from_email, to , pk = 'Appointment Reschedule', 'TelePsycRX@telepsycrx.com', instance.doctor.email, instance.id```
