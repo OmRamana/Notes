@@ -1,6 +1,6 @@
 **Making an update to django model based on the request params**
 
-from django.dispatch import receiver
+```from django.dispatch import receiver
 from django.db.models.signals import post_save
 from django.core.mail import EmailMultiAlternatives
 from django.http import JsonResponse
@@ -13,7 +13,7 @@ from django.forms.models import model_to_dict
         appointment.is_confirmed = True
         #appointment.status = "Confirmed"
         appointment.save()
-        return JsonResponse(model_to_dict(appointment))
+        return JsonResponse(model_to_dict(appointment))```
 
 **Send email on Model creation django**
      
@@ -29,7 +29,7 @@ from django.forms.models import model_to_dict
        msg.attach_alternative(html_content, "text/html")
        msg.send()
 
-** Send an email after model update django **
+**Send an email after model update django**
 
 ```@receiver(post_save, sender=Appointment)
    def send_appointment_reschedule_email(sender, instance, raw, created, **kwargs):
