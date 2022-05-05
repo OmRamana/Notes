@@ -1,20 +1,19 @@
 **Making an update to django model based on the request params**
 
-Create action in the django rest framework viewset
 ```from django.dispatch import receiver
-   from django.db.models.signals import post_save
-   from django.core.mail import EmailMultiAlternatives
-   from django.http import JsonResponse
-   from django.forms.models import model_to_dict
+from django.db.models.signals import post_save
+from django.core.mail import EmailMultiAlternatives
+from django.http import JsonResponse
+from django.forms.models import model_to_dict```
 
-       @action(methods=['get'], detail=False)
-       def confirm_appointment(self,request):
-           pk = request.query_params['pk']
-           appointment = Appointment.objects.get(pk=pk)
-           appointment.is_confirmed = True
-           #appointment.status = "Confirmed"
-           appointment.save()
-           return JsonResponse(model_to_dict(appointment))```
+    @action(methods=['get'], detail=False)
+    def confirm_appointment(self,request):
+        pk = request.query_params['pk']
+        appointment = Appointment.objects.get(pk=pk)
+        appointment.is_confirmed = True
+        #appointment.status = "Confirmed"
+        appointment.save()
+        return JsonResponse(model_to_dict(appointment))
 
 **Send email on Model creation django**
      
