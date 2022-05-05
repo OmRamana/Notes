@@ -1,6 +1,6 @@
 **Making an update to django model based on the request params**
 
-```from django.dispatch import receiver
+from django.dispatch import receiver
 from django.db.models.signals import post_save
 from django.core.mail import EmailMultiAlternatives
 from django.http import JsonResponse
