@@ -13,7 +13,7 @@ from django.forms.models import model_to_dict
         appointment.is_confirmed = True
         #appointment.status = "Confirmed"
         appointment.save()
-        return JsonResponse(model_to_dict(appointment))```
+        return JsonResponse(model_to_dict(appointment))
 
 **Send email on Model creation django**
      
