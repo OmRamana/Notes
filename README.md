@@ -15,7 +15,7 @@ from django.forms.models import model_to_dict
         appointment.save()
         return JsonResponse(model_to_dict(appointment))
 
-**Send email on Model creation django**
+#Send email on Model creation django
      
      @receiver(post_save, sender=Appointment)
      def send_appointment_request_mail(sender, instance, created, **kwargs):
@@ -29,7 +29,7 @@ from django.forms.models import model_to_dict
        msg.attach_alternative(html_content, "text/html")
        msg.send()
 
-**Send an email after model update django**
+#Send an email after model update django
 
 @receiver(post_save, sender=Appointment)
 def send_appointment_reschedule_email(sender, instance, raw, created, **kwargs):
