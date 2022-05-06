@@ -6,6 +6,8 @@ from django.core.mail import EmailMultiAlternatives
 from django.http import JsonResponse
 from django.forms.models import model_to_dict
 
+#update model fields based on request params
+
     @action(methods=['get'], detail=False)
     def confirm_appointment(self,request):
         pk = request.query_params['pk']
