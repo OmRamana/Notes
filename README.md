@@ -1,4 +1,4 @@
-cmd in the current directory
+cmd in the current directory: 
 Once you’re in the right folder, click on the address bar at the top and simply type in cmd and press Enter
 
 
