@@ -1,6 +1,8 @@
 cmd in the current directory: 
 Once you’re in the right folder, click on the address bar at the top and simply type in cmd and press Enter
 
+View git remote: git remote -v
+
 Change git remote: git remote set-url <remote_name> <remote_url> eg git remote set-url origin https://git-repo/new-repository.git
 
 Run a cloned react app: $ npm install; $ npm start
