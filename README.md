@@ -7,6 +7,8 @@ Change git remote: git remote set-url <remote_name> <remote_url> eg git remote s
 
 Run a cloned react app: $ npm install; $ npm start
 
+Json Reading: Json single quoted, paste it in vs code and highlight a single quote, right click , select all occurrences , change it into double quote, right click and format the document
+
 
 
 
