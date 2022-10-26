@@ -1,3 +1,9 @@
+React tuts
+https://www.youtube.com/watch?v=CXa0f4-dWi4
+https://www.youtube.com/watch?v=fL8cFqhTHwA
+https://www.youtube.com/watch?v=3nLTB_E6XAM
+
+
 cmd in the current directory: 
 Once you’re in the right folder, click on the address bar at the top and simply type in cmd and press Enter
 
