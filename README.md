@@ -4,20 +4,20 @@ https://www.youtube.com/watch?v=fL8cFqhTHwA
 https://www.youtube.com/watch?v=3nLTB_E6XAM
 
 
-cmd in the current directory: 
+cmd in the current directory;
 Once you’re in the right folder, click on the address bar at the top and simply type in cmd and press Enter
 
-Changes made to the github repo online, command line push method
+Changes made to the github repo online, command line push method;
 git pull origin master
 git push origin master
 
-View git remote: git remote -v
+View git remote; git remote -v
 
-Change git remote: git remote set-url <remote_name> <remote_url> eg git remote set-url origin https://git-repo/new-repository.git
+Change git remote; git remote set-url <remote_name> <remote_url> eg git remote set-url origin https://git-repo/new-repository.git
 
-Run a cloned react app: $ npm install; $ npm start
+Run a cloned react app; $ npm install; $ npm start
 
-Json Reading: Json single quoted, paste it in vs code and highlight a single quote, right click , select all occurrences , change it into double quote, right click and format the document
+Json Reading; Json single quoted, paste it in vs code and highlight a single quote, right click , select all occurrences , change it into double quote, right click and format the document
 
 
 
