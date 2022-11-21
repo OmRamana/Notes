@@ -8,7 +8,7 @@ cmd in the current directory;
 Once you’re in the right folder, click on the address bar at the top and simply type in cmd and press Enter
 
 Changes made to the github repo online, command line push method;
-git pull origin master
+git pull origin master,
 git push origin master
 
 View git remote; git remote -v
