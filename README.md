@@ -1,3 +1,42 @@
+Microsoft Windows [Version 10.0.22621.819]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\keanu\Documents\anatomy_2>echo "# anatomy_2" >> README.md
+
+C:\Users\keanu\Documents\anatomy_2>git init
+Initialized empty Git repository in C:/Users/keanu/Documents/anatomy_2/.git/
+
+C:\Users\keanu\Documents\anatomy_2>git add README.md
+
+C:\Users\keanu\Documents\anatomy_2>git add water_drinking_pattern.png
+
+C:\Users\keanu\Documents\anatomy_2>git commit -m "first commit"
+[master (root-commit) 674491c] first commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 README.md
+ create mode 100644 water_drinking_pattern.png
+
+C:\Users\keanu\Documents\anatomy_2>git branch -M main
+
+C:\Users\keanu\Documents\anatomy_2>git remote add origin https://github.com/OmRamana/anatomy_2.git
+
+C:\Users\keanu\Documents\anatomy_2>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 36.63 KiB | 7.33 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/OmRamana/anatomy_2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\keanu\Documents\anatomy_2>
+
+
+
+
+
 React tuts
 https://www.youtube.com/watch?v=CXa0f4-dWi4
 https://www.youtube.com/watch?v=fL8cFqhTHwA
@@ -18,19 +57,6 @@ Change git remote; git remote set-url <remote_name> <remote_url> eg git remote s
 Run a cloned react app; $ npm install; $ npm start
 
 Json Reading; Json single quoted, paste it in vs code and highlight a single quote, right click , select all occurrences , change it into double quote, right click and format the document
-
-
-
-
-
-
-
-
-
-
-
-
-
 **Email sending and model updates django rest framework**
 
 ```from django.dispatch import receiver
